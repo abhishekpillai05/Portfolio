@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abhishek A Pillai — AI Engineer</title>
+  <meta name="description" content="Portfolio of Abhishek A Pillai — AI Engineer, Hackathon Champion, Full-Stack Developer from Goa, India."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@400;600;700;900&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+<div class="grid-overlay"></div>
+<div id="cursor-fx"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <span class="logo-bracket">[</span>
+      <span class="logo-name">AP</span>
+      <span class="logo-bracket">]</span>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero"         class="nl" id="nl-h">HOME</a></li>
+      <li><a href="#about"        class="nl" id="nl-a">ABOUT</a></li>
+      <li><a href="#experience"   class="nl" id="nl-e">WORK</a></li>
+      <li><a href="#projects"     class="nl" id="nl-p">PROJECTS</a></li>
+      <li><a href="#skills"       class="nl" id="nl-s">SKILLS</a></li>
+      <li><a href="#achievements" class="nl" id="nl-ach">AWARDS</a></li>
+      <li><a href="#contact"      class="nl" id="nl-c">CONTACT</a></li>
+    </ul>
+    <a href="mailto:abhishekap2005@gmail.com" class="nav-hire" id="nav-hire-btn">HIRE ME</a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-inner">
+    <!-- Left col -->
+    <div class="hero-content">
+      <div class="hero-overline">
+        <span class="over-bar"></span>
+        <span class="over-txt">AI/ML ENGINEER &amp; FULL-STACK DEVELOPER</span>
+        <span class="over-bar"></span>
+      </div>
+
+      <h1 class="hero-name">
+        <span class="hn-first">ABHISHEK</span>
+        <span class="hn-last">A PILLAI</span>
+      </h1>
+
+      <div class="hero-sub">
+        <span class="sub-arrow">&gt;&gt;</span>
+        <span id="type-el" class="type-text"></span>
+        <span class="type-cur">|</span>
+      </div>
+
+      <p class="hero-bio">
+        Computer Engineering + AI/ML @ PCCE Goa. National hackathon champion.
+        Building intelligent systems at the edge of what's possible.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#projects" class="btn-prime" id="hcta-1">
+          <span class="btn-icon">&gt;</span> VIEW PROJECTS
+        </a>
+        <a href="#contact" class="btn-sec" id="hcta-2">CONTACT ME</a>
+        <a href="https://github.com/abhishekpillai05" target="_blank" class="btn-ghost" id="hcta-3">GITHUB ↗</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-blk" id="sb-1">
+          <span class="stat-n" data-v="6">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-l">PROJECTS</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat-blk" id="sb-2">
+          <span class="stat-n" data-v="7">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-l">AWARDS</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat-blk" id="sb-3">
+          <span class="stat-n" data-v="4">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-l">INTERNSHIPS</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right col: HUD card -->
+    <div class="hero-hud">
+      <div class="hud-card" id="hud-card">
+        <div class="hud-header">
+          <span class="hud-dot d1"></span>
+          <span class="hud-dot d2"></span>
+          <span class="hud-dot d3"></span>
+          <span class="hud-title">// SUBJECT_PROFILE.exe</span>
+        </div>
+        <div class="hud-body">
+          <div class="hud-row"><span class="hud-k">NAME</span><span class="hud-sep">::</span><span class="hud-v">Abhishek A Pillai</span></div>
+          <div class="hud-row"><span class="hud-k">DOB</span><span class="hud-sep">::</span><span class="hud-v">01.08.2005</span></div>
+          <div class="hud-row"><span class="hud-k">LOCATION</span><span class="hud-sep">::</span><span class="hud-v">Goa, India</span></div>
+          <div class="hud-row"><span class="hud-k">DEGREE</span><span class="hud-sep">::</span><span class="hud-v">B.E. Computer Engg (AI&amp;ML)</span></div>
+          <div class="hud-row"><span class="hud-k">INSTITUTE</span><span class="hud-sep">::</span><span class="hud-v">PCCE Goa</span></div>
+          <div class="hud-row"><span class="hud-k">GRAD_YEAR</span><span class="hud-sep">::</span><span class="hud-v">2027</span></div>
+          <div class="hud-row"><span class="hud-k">EMAIL</span><span class="hud-sep">::</span><span class="hud-v orange-v">abhishekap2005@gmail.com</span></div>
+          <div class="hud-row"><span class="hud-k">GITHUB</span><span class="hud-sep">::</span><a href="https://github.com/abhishekpillai05" target="_blank" class="hud-link" id="hud-gh">abhishekpillai05</a></div>
+          <div class="hud-row highlight-row">
+            <span class="hud-k">STATUS</span><span class="hud-sep">::</span>
+            <span class="hud-v status-v">
+              <span class="status-ping"></span>AVAILABLE_FOR_HIRE
+            </span>
+          </div>
+        </div>
+        <div class="hud-footer">
+          <div class="hud-bar-wrap"><div class="hud-bar" id="hud-bar"></div></div>
+          <span class="hud-loading" id="hud-loading">LOADING PROFILE...</span>
+        </div>
+        <!-- corner accents -->
+        <div class="corner tl"></div>
+        <div class="corner tr"></div>
+        <div class="corner bl"></div>
+        <div class="corner br"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll-hint">
+    <div class="scroll-line"></div>
+    <span>SCROLL</span>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="sec">
+  <div class="sec-inner">
+    <div class="sec-tag reveal">01 // ABOUT</div>
+    <h2 class="sec-h reveal"><span class="sec-hl">WHO</span> AM I</h2>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>I'm a <strong>Computer Engineering with AI&amp;ML</strong> student who competes hard and builds harder. National hackathon champion with a track record of delivering AI solutions that actually work.</p>
+        <p>My stack runs from <span class="o-hl">TensorFlow</span> to <span class="o-hl">NestJS</span> — from training deep learning models to shipping enterprise LMS platforms. I live at the intersection of intelligence and engineering.</p>
+        <p>I've stood in front of the IT Minister, competed in 127-team international hackathons, and shipped production systems. <span class="o-hl">I don't just code — I solve.</span></p>
+        <div class="about-links">
+          <a href="https://www.linkedin.com/in/abhishek-a-pillai-a96909289/" target="_blank" class="alink" id="al-li">[ LinkedIn ↗ ]</a>
+          <a href="https://github.com/abhishekpillai05" target="_blank" class="alink" id="al-gh">[ GitHub ↗ ]</a>
+          <a href="mailto:abhishekap2005@gmail.com" class="alink" id="al-em">[ Email ↗ ]</a>
+        </div>
+      </div>
+      <div class="about-edu reveal">
+        <div class="edu-title">// EDUCATION.log</div>
+        <div class="edu-entries">
+          <div class="edu-item">
+            <div class="edu-marker"></div>
+            <div class="edu-data">
+              <h4>B.E. Computer Engineering (AI&amp;ML)</h4>
+              <p>Padre Conceicao College of Engineering, Goa</p>
+              <span class="edu-yr">2023 — 2027</span>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-marker"></div>
+            <div class="edu-data">
+              <h4>Class XII — CBSE</h4>
+              <p>Kendriya Vidyalaya No. 2, Vasco, Goa</p>
+              <span class="edu-yr">2023</span>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-marker"></div>
+            <div class="edu-data">
+              <h4>Class X — CBSE</h4>
+              <p>Kendriya Vidyalaya No. 2, Vasco, Goa</p>
+              <span class="edu-yr">2021</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="sec sec-dark">
+  <div class="sec-inner">
+    <div class="sec-tag reveal">02 // WORK_HISTORY</div>
+    <h2 class="sec-h reveal">WHERE I'VE <span class="sec-hl">WORKED</span></h2>
+    <div class="exp-list">
+
+      <div class="exp-item reveal" id="ei-1">
+        <div class="exp-num">04</div>
+        <div class="exp-card">
+          <div class="exp-period">AUG '26 — OCT '26</div>
+          <div class="exp-head">
+            <h3>Software Engineer Intern</h3>
+            <span class="exp-co">Creative Capsule</span>
+          </div>
+          <p class="exp-desc">Developed an enterprise offline LMS from scratch built to SCORM standards for standardized e-learning content delivery across offline environments.</p>
+          <div class="exp-chips">
+            <span>NestJS</span><span>PostgreSQL</span><span>Prisma ORM</span><span>SCORM 1.2</span><span>REST APIs</span><span>TypeScript</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-item reveal" id="ei-2">
+        <div class="exp-num">03</div>
+        <div class="exp-card">
+          <div class="exp-period">JUL '25 — AUG '25</div>
+          <div class="exp-head">
+            <h3>Web Development Intern</h3>
+            <span class="exp-co">Lenovo India</span>
+          </div>
+          <p class="exp-desc">Built responsive web interfaces serving as a digital awareness and educational platform for Lenovo India.</p>
+          <div class="exp-chips">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <a href="https://drive.google.com/file/d/1GJ6vzhSY-u1MzhMcVKhVQGuM2BhRKCf1/view" target="_blank" class="exp-cert" id="excl-1">[ CERTIFICATE ↗ ]</a>
+        </div>
+      </div>
+
+      <div class="exp-item reveal" id="ei-3">
+        <div class="exp-num">02</div>
+        <div class="exp-card">
+          <div class="exp-period">DEC '24 — FEB '25</div>
+          <div class="exp-head">
+            <h3>Cyber Security Intern</h3>
+            <span class="exp-co">SmartED Innovations</span>
+          </div>
+          <p class="exp-desc">Network security, ethical hacking, vulnerability assessment and real-world threat analysis using professional penetration testing tools.</p>
+          <div class="exp-chips">
+            <span>Kali Linux</span><span>Wireshark</span><span>Nmap</span><span>tcpdump</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-item reveal" id="ei-4">
+        <div class="exp-num">01</div>
+        <div class="exp-card">
+          <div class="exp-period">JUN '24 — SEP '24</div>
+          <div class="exp-head">
+            <h3>AI &amp; ML Virtual Intern</h3>
+            <span class="exp-co">EduSkills Foundation</span>
+          </div>
+          <p class="exp-desc">Hands-on ML: Linear Regression, Decision Trees, K-Means clustering with practical real-dataset implementations in TensorFlow and Scikit-learn.</p>
+          <div class="exp-chips">
+            <span>Python</span><span>TensorFlow</span><span>Scikit-learn</span><span>Pandas</span><span>NumPy</span>
+          </div>
+          <a href="https://drive.google.com/file/d/1ckuGuW5pSCon_aPaVh852yVMp0D_ya3i/view" target="_blank" class="exp-cert" id="excl-2">[ CERTIFICATE ↗ ]</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="sec">
+  <div class="sec-inner">
+    <div class="sec-tag reveal">03 // PROJECTS</div>
+    <h2 class="sec-h reveal">WHAT I'VE <span class="sec-hl">BUILT</span></h2>
+    <div class="proj-grid">
+
+      <div class="proj-card reveal" id="pc-1">
+        <div class="pc-accent-bar"></div>
+        <div class="pc-top">
+          <span class="pc-idx">PRJ_001</span>
+          <a href="https://github.com/abhishekpillai05/LipCap" target="_blank" class="pc-gh" id="pcgh-lipcap">GITHUB ↗</a>
+        </div>
+        <div class="pc-emoji">🧠</div>
+        <h3 class="pc-name">LipCap</h3>
+        <div class="pc-cat">[ Deep Learning / Computer Vision ]</div>
+        <p class="pc-desc">AI lip-reading system converting silent lip movements from video to text. Deep learning + computer vision pipeline delivering real-time transcripts.</p>
+        <div class="pc-stack">
+          <span>Python</span><span>Deep Learning</span><span>Computer Vision</span><span>OpenCV</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal" id="pc-2">
+        <div class="pc-accent-bar"></div>
+        <div class="pc-top">
+          <span class="pc-idx">PRJ_002</span>
+          <a href="https://github.com/Abhishek-megtech/Intelligent-Energy-Grid-Management-System" target="_blank" class="pc-gh" id="pcgh-1">GITHUB ↗</a>
+        </div>
+        <div class="pc-emoji">⚡</div>
+        <h3 class="pc-name">Intelligent Energy Grid</h3>
+        <div class="pc-cat">[ AI / Predictive Analytics ]</div>
+        <p class="pc-desc">Predictive AI for energy distribution — smart load balancing, fault prediction, and real-time grid optimization for reliable energy networks.</p>
+        <div class="pc-stack">
+          <span>Python</span><span>ML</span><span>Analytics</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal" id="pc-3">
+        <div class="pc-accent-bar"></div>
+        <div class="pc-top">
+          <span class="pc-idx">PRJ_003</span>
+          <a href="https://github.com/Abhishek-megtech/E-Bandobast" target="_blank" class="pc-gh" id="pcgh-2">GITHUB ↗</a>
+        </div>
+        <div class="pc-emoji">🚔</div>
+        <h3 class="pc-name">E-Bandobast</h3>
+        <div class="pc-cat">[ AI / Real-Time / GPS ]</div>
+        <p class="pc-desc">Smart police deployment &amp; monitoring: real-time GPS tracking, geofencing alerts, intelligent patrol analytics for law enforcement management.</p>
+        <div class="pc-stack">
+          <span>GPS</span><span>Geofencing</span><span>AI</span><span>Real-Time</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal" id="pc-4">
+        <div class="pc-accent-bar"></div>
+        <div class="pc-top">
+          <span class="pc-idx">PRJ_004</span>
+          <a href="https://github.com/Abhishek-megtech/AgriFlow-AI" target="_blank" class="pc-gh" id="pcgh-3">GITHUB ↗</a>
+        </div>
+        <div class="pc-emoji">🌾</div>
+        <h3 class="pc-name">AgriFlow-AI</h3>
+        <div class="pc-cat">[ AI / Supply Chain ]</div>
+        <p class="pc-desc">Agricultural supply chain intelligence: market price prediction, spoilage risk assessment, logistics optimization — maximizing farmer profit post-harvest.</p>
+        <div class="pc-stack">
+          <span>AI/ML</span><span>Python</span><span>Supply Chain</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal" id="pc-5">
+        <div class="pc-accent-bar"></div>
+        <div class="pc-top">
+          <span class="pc-idx">PRJ_005</span>
+          <a href="https://github.com/Abhishek-megtech/Stock-Master" target="_blank" class="pc-gh" id="pcgh-4">GITHUB ↗</a>
+        </div>
+        <div class="pc-emoji">📦</div>
+        <h3 class="pc-name">Stock Master</h3>
+        <div class="pc-cat">[ Full-Stack / Inventory ]</div>
+        <p class="pc-desc">Full-featured inventory system: stock monitoring, automated product entry, real-time updates and comprehensive reporting for efficient stock control.</p>
+        <div class="pc-stack">
+          <span>Python</span><span>Database</span><span>Automation</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal" id="pc-6">
+        <div class="pc-accent-bar cyan-bar"></div>
+        <div class="pc-top">
+          <span class="pc-idx">PRJ_006</span>
+          <span class="pc-badge cyan-badge">// ENTERPRISE</span>
+        </div>
+        <div class="pc-emoji">📚</div>
+        <h3 class="pc-name">Offline LMS</h3>
+        <div class="pc-cat">[ Full-Stack / SCORM / Enterprise ]</div>
+        <p class="pc-desc">Enterprise offline-first LMS with SCORM management, course data modeling, content versioning, and PostgreSQL-SQLite sync via PowerSync.</p>
+        <div class="pc-stack">
+          <span>NestJS</span><span>TypeScript</span><span>PostgreSQL</span><span>SCORM</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="sec sec-dark">
+  <div class="sec-inner">
+    <div class="sec-tag reveal">04 // SKILLS</div>
+    <h2 class="sec-h reveal">MY <span class="sec-hl">ARSENAL</span></h2>
+    <div class="skills-wrap">
+      <div class="skill-cat reveal" id="sc-1">
+        <div class="scat-label">LANGUAGES</div>
+        <div class="skill-pills">
+          <span>Python</span><span>C/C++</span><span>JavaScript</span><span>TypeScript</span><span>HTML/CSS</span>
+        </div>
+      </div>
+      <div class="skill-cat reveal" id="sc-2">
+        <div class="scat-label">DATABASES</div>
+        <div class="skill-pills">
+          <span>MySQL</span><span>PostgreSQL</span><span>MongoDB</span><span>SQLite</span>
+        </div>
+      </div>
+      <div class="skill-cat reveal" id="sc-3">
+        <div class="scat-label">FRAMEWORKS</div>
+        <div class="skill-pills">
+          <span>NestJS</span><span>React.js</span><span>Node.js</span><span>Express.js</span><span>Socket.IO</span>
+        </div>
+      </div>
+      <div class="skill-cat reveal" id="sc-4">
+        <div class="scat-label">AI / ML</div>
+        <div class="skill-pills">
+          <span>TensorFlow</span><span>Keras</span><span>Scikit-learn</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span>
+        </div>
+      </div>
+      <div class="skill-cat reveal" id="sc-5">
+        <div class="scat-label">CYBERSECURITY</div>
+        <div class="skill-pills">
+          <span>Kali Linux</span><span>Wireshark</span><span>Nmap</span><span>tcpdump</span>
+        </div>
+      </div>
+      <div class="skill-cat reveal" id="sc-6">
+        <div class="scat-label">DEV TOOLS</div>
+        <div class="skill-pills">
+          <span>Git</span><span>GitHub</span><span>VS Code</span><span>LaTeX</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements" class="sec">
+  <div class="sec-inner">
+    <div class="sec-tag reveal">05 // AWARDS</div>
+    <h2 class="sec-h reveal">WHAT I'VE <span class="sec-hl">WON</span></h2>
+    <div class="ach-list">
+
+      <a href="https://drive.google.com/file/d/1pzPHA1kry9Cep-wEmqvFJd1mQngRhh3P/view?usp=drive_link" target="_blank" class="ach-row gold-row reveal" id="ar-1">
+        <div class="ach-medal">🥇</div>
+        <div class="ach-info">
+          <h3>1ST PLACE — QUANTEXERA 2026</h3>
+          <p>National-Level Hackathon — Innovative Technology Solution</p>
+        </div>
+        <div class="ach-right">
+          <span class="ach-scope gold-scope">NATIONAL</span>
+          <span class="ach-arrow">↗</span>
+        </div>
+      </a>
+
+      <a href="https://drive.google.com/file/d/12aBF7RKLktOCW-jgXHxDJlaPNqklDMXL/view?usp=sharing" target="_blank" class="ach-row reveal" id="ar-2">
+        <div class="ach-medal">🏆</div>
+        <div class="ach-info">
+          <h3>FINALIST — IDEAS INNOVATION CHALLENGE 2025</h3>
+          <p>Presented before the Honorable IT Minister &amp; Industry Professionals</p>
+        </div>
+        <div class="ach-right">
+          <span class="ach-scope">NATIONAL</span>
+          <span class="ach-arrow">↗</span>
+        </div>
+      </a>
+
+      <a href="https://drive.google.com/file/d/1QQvoK5oFVKe8wC2cbGkV290_5HKublrh/view?usp=sharing" target="_blank" class="ach-row reveal" id="ar-3">
+        <div class="ach-medal">🌐</div>
+        <div class="ach-info">
+          <h3>4TH PLACE — QUANTUM TECHNOLOGY HACKATHON</h3>
+          <p>127 Finalist Teams — International Level Competition</p>
+        </div>
+        <div class="ach-right">
+          <span class="ach-scope blue-scope">INTERNATIONAL</span>
+          <span class="ach-arrow">↗</span>
+        </div>
+      </a>
+
+      <a href="https://drive.google.com/file/d/1sDAyFqq4MY2wqHEKWHkNrU7pduRgdKkG/view?usp=sharing" target="_blank" class="ach-row reveal" id="ar-4">
+        <div class="ach-medal">🏅</div>
+        <div class="ach-info">
+          <h3>SPECIAL RECOGNITION — PCCE 2025–2026</h3>
+          <p>Top Honours in Inter-Collegiate Technical Events</p>
+        </div>
+        <div class="ach-right">
+          <span class="ach-scope">INSTITUTIONAL</span>
+          <span class="ach-arrow">↗</span>
+        </div>
+      </a>
+
+      <a href="https://drive.google.com/file/d/1Ney9zEEvsE-QMMy7h_l80Xohw4AvUifA/view?usp=drive_link" target="_blank" class="ach-row reveal" id="ar-5">
+        <div class="ach-medal">⭐</div>
+        <div class="ach-info">
+          <h3>TOP 15 PAN-INDIA — IGNISIA AI HACKATHON (MIT-WPU)</h3>
+          <p>24-Hour National AI Hackathon — Top 15 Teams Across India</p>
+        </div>
+        <div class="ach-right">
+          <span class="ach-scope">NATIONAL</span>
+          <span class="ach-arrow">↗</span>
+        </div>
+      </a>
+
+      <a href="https://drive.google.com/file/d/1NArHy2pygRN3gxkOuA5OA63wO78qS_26/view?usp=drive_link" target="_blank" class="ach-row reveal" id="ar-6">
+        <div class="ach-medal">⭐</div>
+        <div class="ach-info">
+          <h3>TOP 20 — RECKON 7.0 ALL-INDIA HACKATHON</h3>
+          <p>Ranked Top 20 Teams Across India</p>
+        </div>
+        <div class="ach-right">
+          <span class="ach-scope">NATIONAL</span>
+          <span class="ach-arrow">↗</span>
+        </div>
+      </a>
+
+      <a href="https://drive.google.com/file/d/1REwFEGIJWs7rJ7yCGDIBRsphYSWXgXhW/view" target="_blank" class="ach-row reveal" id="ar-7">
+        <div class="ach-medal">🎖️</div>
+        <div class="ach-info">
+          <h3>SILVER — NPTEL INDUSTRY 4.0 &amp; IIoT</h3>
+          <p>Silver Certificate from IIT Kharagpur | Jul '25 — Oct '25</p>
+        </div>
+        <div class="ach-right">
+          <span class="ach-scope cyan-scope">IIT KGP</span>
+          <span class="ach-arrow">↗</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="sec sec-dark">
+  <div class="sec-inner">
+    <div class="sec-tag reveal">06 // CONTACT</div>
+    <h2 class="sec-h reveal">LET'S <span class="sec-hl">BUILD</span> SOMETHING</h2>
+    <div class="contact-grid">
+      <div class="contact-left reveal">
+        <p class="contact-lead">Available for internships, freelance projects, and ambitious collaborations. I respond within 24 hours.</p>
+        <div class="contact-rows">
+          <a href="mailto:abhishekap2005@gmail.com" class="ct-row" id="cr-1">
+            <span class="ct-icon">✉</span>
+            <div><span class="ct-lbl">EMAIL</span><span class="ct-val">abhishekap2005@gmail.com</span></div>
+            <span class="ct-arr">→</span>
+          </a>
+          <a href="tel:+918767881263" class="ct-row" id="cr-2">
+            <span class="ct-icon">☎</span>
+            <div><span class="ct-lbl">PHONE</span><span class="ct-val">+91-8767881263</span></div>
+            <span class="ct-arr">→</span>
+          </a>
+          <a href="https://www.linkedin.com/in/abhishek-a-pillai-a96909289/" target="_blank" class="ct-row" id="cr-3">
+            <span class="ct-icon">💼</span>
+            <div><span class="ct-lbl">LINKEDIN</span><span class="ct-val">abhishek-a-pillai</span></div>
+            <span class="ct-arr">→</span>
+          </a>
+          <a href="https://github.com/abhishekpillai05" target="_blank" class="ct-row" id="cr-4">
+            <span class="ct-icon">🐙</span>
+            <div><span class="ct-lbl">GITHUB</span><span class="ct-val">abhishekpillai05</span></div>
+            <span class="ct-arr">→</span>
+          </a>
+        </div>
+      </div>
+      <div class="contact-right reveal">
+        <div class="cta-panel">
+          <div class="cta-corners">
+            <div class="cc tl"></div><div class="cc tr"></div>
+            <div class="cc bl"></div><div class="cc br"></div>
+          </div>
+          <div class="cta-overline">// READY_TO_CONNECT</div>
+          <h3 class="cta-h">Open to great<br/><span class="o-hl">opportunities</span></h3>
+          <p>Whether it's a startup, a research project, or something that doesn't exist yet — let's talk.</p>
+          <a href="mailto:abhishekap2005@gmail.com" class="btn-prime full-btn" id="cta-btn">
+            <span class="btn-icon">&gt;</span> INITIALIZE CONNECTION
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <span class="logo-bracket">[</span>AP<span class="logo-bracket">]</span>
+    </div>
+    <span class="footer-copy">ABHISHEK A PILLAI &copy; 2026 — GOA, INDIA</span>
+    <div class="footer-links">
+      <a href="https://github.com/abhishekpillai05" target="_blank" id="fl-gh">GITHUB</a>
+      <a href="https://www.linkedin.com/in/abhishek-a-pillai-a96909289/" target="_blank" id="fl-li">LINKEDIN</a>
+      <a href="mailto:abhishekap2005@gmail.com" id="fl-em">EMAIL</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
