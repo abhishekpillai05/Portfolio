@@ -427,9 +427,24 @@ body{
 .pc-emoji{font-size:2.2rem;margin-bottom:0.8rem;display:block;}
 .pc-name{font-family:var(--font);font-size:1.05rem;font-weight:700;color:var(--txt);margin-bottom:5px;letter-spacing:0.5px;}
 .pc-cat{font-family:var(--font-ui);font-size:0.68rem;color:var(--cy);letter-spacing:1px;margin-bottom:0.8rem;}
-.pc-desc{font-size:0.875rem;color:var(--txt2);line-height:1.7;margin-bottom:1rem;}
-.pc-stack{display:flex;flex-wrap:wrap;gap:0.3rem;}
-.pc-stack span{font-family:var(--font-ui);font-size:0.62rem;color:var(--txt3);background:var(--surface2);border:1px solid rgba(255,255,255,0.05);padding:3px 9px;letter-spacing:1px;}
+.pc-stack{display:flex;flex-wrap:wrap;gap:0.4rem;margin-top:auto;}
+.pc-stack span{
+  font-family:var(--font-ui);
+  font-size:0.7rem;
+  font-weight:500;
+  color:#cbd5e1;
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,107,0,0.22);
+  padding:4px 10px;
+  letter-spacing:0.8px;
+  border-radius:2px;
+  transition:all var(--tr);
+}
+.proj-card:hover .pc-stack span{
+  border-color:rgba(255,107,0,0.45);
+  background:rgba(255,107,0,0.09);
+  color:#ffffff;
+}
 
 /* ── SKILLS ─────────────────────────────── */
 .skills-wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;}
