@@ -384,7 +384,19 @@ body{
 }
 .exp-item:hover .exp-card{background:rgba(255,107,0,0.03);}
 .exp-item:hover .exp-card::before{background:var(--or);box-shadow:0 0 10px rgba(255,107,0,0.5);}
-.exp-period{font-family:var(--font-ui);font-size:0.65rem;color:var(--txt3);letter-spacing:2px;margin-bottom:0.7rem;}
+.exp-period{
+  display:inline-block;
+  font-family:var(--font-ui);
+  font-size:0.72rem;
+  font-weight:600;
+  color:#cbd5e1;
+  background:rgba(255,107,0,0.08);
+  border:1px solid rgba(255,107,0,0.25);
+  padding:3px 10px;
+  letter-spacing:1.5px;
+  margin-bottom:0.75rem;
+  border-radius:2px;
+}
 .exp-head{margin-bottom:0.8rem;}
 .exp-head h3{font-family:var(--font);font-size:0.95rem;font-weight:700;color:var(--txt);letter-spacing:0.5px;margin-bottom:4px;}
 .exp-co{font-family:var(--font-ui);font-size:0.75rem;color:var(--or);letter-spacing:2px;}
@@ -418,7 +430,7 @@ body{
 .featured-card .pc-accent-bar{transform:scaleX(1);}
 
 .pc-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;}
-.pc-idx{font-family:var(--font-ui);font-size:0.62rem;color:var(--txt3);letter-spacing:2px;}
+.pc-idx{font-family:var(--font-ui);font-size:0.68rem;font-weight:600;color:#8a99ad;letter-spacing:2px;}
 .pc-badge{font-family:var(--font-ui);font-size:0.62rem;color:var(--or);background:var(--or3);border:1px solid var(--border);padding:3px 10px;letter-spacing:1px;}
 .cyan-badge{color:var(--cy)!important;background:var(--cy2)!important;border-color:rgba(0,212,255,0.2)!important;}
 .pc-gh{font-family:var(--font-ui);font-size:0.68rem;color:var(--or);text-decoration:none;letter-spacing:1px;transition:color var(--tr);}
