@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <!-- Background Tech Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a1f"/>
+      <stop offset="45%" stop-color="#0e0e11"/>
+      <stop offset="100%" stop-color="#060608"/>
+    </linearGradient>
+
+    <!-- Border Neon Gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffa04c"/>
+      <stop offset="40%" stop-color="#ff6b00"/>
+      <stop offset="100%" stop-color="#d64500"/>
+    </linearGradient>
+
+    <!-- Crisp Silver-White Typography Gradient -->
+    <linearGradient id="glyphGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="35%" stop-color="#fafafc"/>
+      <stop offset="100%" stop-color="#cfd1dc"/>
+    </linearGradient>
+
+    <!-- Electric Orange Bracket Gradient -->
+    <linearGradient id="bracketGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffaa55"/>
+      <stop offset="100%" stop-color="#ff5500"/>
+    </linearGradient>
+
+    <!-- High-intensity Glow Filter -->
+    <filter id="bracketGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Electric Cyan Quantum Glow -->
+    <filter id="cyanGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Cyber Badge Base -->
+  <rect x="4" y="4" width="92" height="92" rx="22" fill="url(#bgGrad)" stroke="url(#borderGrad)" stroke-width="4"/>
+
+  <!-- Inner HUD Circuit Guide Line -->
+  <rect x="10" y="10" width="80" height="80" rx="16" fill="none" stroke="rgba(255,107,0,0.18)" stroke-width="1" stroke-dasharray="5,4"/>
+
+  <!-- Left Bracket [ -->
+  <path d="M 21 24 H 12 V 76 H 21 V 69.5 H 17 V 30.5 H 21 Z" fill="url(#bracketGrad)" filter="url(#bracketGlow)"/>
+
+  <!-- Right Bracket ] -->
+  <path d="M 79 24 H 88 V 76 H 79 V 69.5 H 83 V 30.5 H 79 Z" fill="url(#bracketGrad)" filter="url(#bracketGlow)"/>
+
+  <!-- Sci-Fi Letter 'A' -->
+  <path d="M 33 26 H 39.5 L 49 74 H 42.2 L 40 60 H 32.5 L 30.3 74 H 23.5 Z 
+           M 33.7 53.2 H 38.8 L 36.25 36.5 Z" 
+        fill="url(#glyphGrad)" 
+        fill-rule="evenodd"/>
+
+  <!-- Sci-Fi Letter 'P' -->
+  <path d="M 52.5 26 H 66 C 70.5 26 74 29.5 74 34.5 V 45 C 74 50 70.5 53.5 66 53.5 H 58.5 V 74 H 52.5 Z 
+           M 58.5 32.8 V 46.8 H 65 C 67.2 46.8 68.2 45.4 68.2 43 V 36.5 C 68.2 34.2 67.2 32.8 65 32.8 Z" 
+        fill="url(#glyphGrad)" 
+        fill-rule="evenodd"/>
+
+  <!-- Cyan Quantum Indicator Beacon -->
+  <circle cx="85.5" cy="15.5" r="4.2" fill="#00d4ff" filter="url(#cyanGlow)"/>
+  <circle cx="85.5" cy="15.5" r="1.8" fill="#ffffff"/>
+</svg>
